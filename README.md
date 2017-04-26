@@ -1,4 +1,4 @@
-# Vuex beer list
+# Vue beer list
 
 A simple product list.
 
