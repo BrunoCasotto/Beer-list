@@ -1,6 +1,17 @@
-//modules
-import App from './components/App.vue'
+import Vue from 'vue'
+import Router from 'vue-router'
 
-module.exports = [
-	{ path: '/', component: App }
-]
+//modules
+import Home from './components/Home.vue'
+import ProductSingle from './components/ProductSingle.vue'
+import NotFound from './components/NotFound.vue'
+
+Vue.use(Router)
+export default new Router({
+	mode: 'history',
+	routes: [
+		{ path: '/', component: Home },
+		{ path: '/beer/:id', component: ProductSingle },
+		{ path: "*", component: NotFound }
+	]
+})

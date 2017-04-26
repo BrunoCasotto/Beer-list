@@ -12,7 +12,7 @@
 <style lang="sass" scoped>
 	@import "~_sass/_vars.scss";
 	.header {
-		height: 100px;
+		height: $header-height;
 		padding: 30px 30px;
 		box-shadow: 0px 6px 4px 0px $color-grey--base;
 		background-color: $color-black--base;

@@ -11,12 +11,12 @@
 </script>
 <style lang="sass" scoped>
 	@import "~_sass/_vars.scss";
-
 	.footer {
 		box-shadow: -1px 5px 11px -7px $color-grey--base;
 		background-color: $color-black--base;
 		margin-top: 30px;
 		padding: 20px 0;
+		height: $footer-height;
 
 		&__text {
 			margin: auto;

@@ -1,7 +1,7 @@
 <template>  
     <div class="product-single">
         <header-template></header-template>
-        <div class=" container">
+        <div class=" container product-single__content">
             <breadcrumbs :config="BreadcrumbsConfig"></breadcrumbs>
 			<product-box :productId="$route.params.id"></product-box>
         </div>
@@ -40,5 +40,9 @@
 	@import "~_sass/_vars.scss";
 	.product-single {
 		background-color: $color-grey--base;
+
+		&__content {
+			min-height: calc( 95vh - #{$footer-height} - #{$header-height})
+		}
 	}
 </style>

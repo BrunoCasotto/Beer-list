@@ -5,8 +5,11 @@ $color-grey--dark:		   #827d8e;
 $color-black--base:        black;
 $color-purple--base:       #ff9400;
 
-/* SCREEN SIZES
-=============================================*/
+//template sizes
+$header-height: 100px;
+$footer-height: 60px;
+
+//screen sizes
 $screen-mc: 480px;
 $screen-xs: 540px;
 $screen-sm: 768px;

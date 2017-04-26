@@ -4,7 +4,7 @@
 		<div class="list-group product-list__content">
 			<a 
 				v-for="product in productList" 
-				:href="'/#/beer/'+ product.id" 
+				:href="'/beer/'+ product.id" 
 				class="list-group-item product-list__content__item"
 			>
 				<p class="title">{{ product.name }}</p>
