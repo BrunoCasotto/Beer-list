@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --history-api-fallback",
-    "build": "webpack -p",
-    "test": "mocha test"
+    "build:prod": "webpack -p",
+    "test": "mocha test",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "Bruno Casotto",
   "license": "MIT",
