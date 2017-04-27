@@ -11,6 +11,12 @@ $ npm install
 $ npm start
 ```
 
+## Test
+
+```
+$ npm test
+```
+
 
 ## License
 MIT
