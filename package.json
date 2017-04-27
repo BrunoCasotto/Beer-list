@@ -2,6 +2,10 @@
   "name": "beer-project",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "~6.0.0",
+    "npm": "~4.1.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --history-api-fallback",
