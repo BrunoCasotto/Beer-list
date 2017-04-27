@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --history-api-fallback",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "test": "mocha test"
   },
   "author": "Bruno Casotto",
   "license": "MIT",
@@ -36,5 +37,10 @@
     "vuex": "^2.1.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
   }
 }

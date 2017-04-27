@@ -1,5 +1,5 @@
-import Axios from 'axios'
-const config = require('_config/api.js')
+const Axios = require('axios')
+const config = require('./../configs/api.js')
 
 class BeerService {
 
@@ -18,4 +18,4 @@ class BeerService {
 			data: {}
 		})
 	}
-} export default new BeerService()
+} module.exports = new BeerService()
