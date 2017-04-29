@@ -10,10 +10,8 @@ $ cd beer_project
 $ npm install
 $ npm start
 ```
-
-## Api
-The Star Wars API that will be used is: Swapi - The Star Wars API
-website: http://swapi.co/
+## Test
+```npm test```
 
 
 
