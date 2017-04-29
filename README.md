@@ -11,11 +11,10 @@ $ npm install
 $ npm start
 ```
 
-## Test
+## Api
+The Star Wars API that will be used is: Swapi - The Star Wars API
+website: http://swapi.co/
 
-```
-$ npm test
-```
 
 
 ## License
