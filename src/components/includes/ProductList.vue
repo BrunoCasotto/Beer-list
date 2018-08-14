@@ -2,14 +2,16 @@
 	<div class="container product-list">
 		<h4 class="product-list__title">Beer list</h4>
 		<div class="list-group product-list__content">
-			<a 
-				v-for="product in productList" 
-				:href="'/beer/'+ product.id" 
-				class="list-group-item product-list__content__item"
-			>
-				<p class="title">{{ product.name }}</p>
-				<p class="tagline">{{ product.tagline }}</p>
-			</a>
+			<template v-for="product in productList" >
+				<router-link
+					:to="'/beer/'+ product.id"
+					v-bind:key=product.id
+					class="list-group-item product-list__content__item"
+				>
+					<p class="title">{{ product.name }}</p>
+					<p class="tagline">{{ product.tagline }}</p>
+				</router-link>
+			</template>
 		</div>
 		<loader></loader>
 	</div>
@@ -18,6 +20,7 @@
 <script>
 import BeerService from '_services/BeerService.js'
 import Loader from '_components/common/Loader.vue'
+import Router from 'vue-router'
 
 	export default {
 		name: 'ProductList',
